@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inschrijfformulier</title>
+</head>
+<body>
+    <h1>Inschrijving</h1>
+    <form>
+        <fieldset>
+           <legend><strong>Persoonlijke gegevens</strong></legend>
+           <label for="naam">Volledige naam:</label>
+           <input type="text" id="naam" name="name">
+           <br><br>
+           <label for="geslacht">Geslacht:</label>
+           <input type="radio" name="geslacht" value="man">Man
+           <input type="radio" name="geslacht" value="vrouw">Vrouw
+           <input type="radio" name="geslacht" value="anders">Anders
+           <br><br>
+           <label for="adres">Adres:</label>
+           <input type="text" id="adres" name="adres">
+           <br><br>
+           <label for="postcode">Postcode:</label>
+           <input type="text" id="postcode" name="postcode">
+           <br><br>
+           <label for="woonplaats">Woonplaats:</label>
+           <input type="text" id="woonplaats" name="woonplaats">
+           <br><br>
+           <label for="profielfoto">Profielfoto:</label>
+           <input type="file" id="profielfoto" name="profielfoto">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><strong>Inschrijvingsinformatie</strong></legend>
+                <label for="opleiding">Hoogst genoten opleiding:</label>
+                  <select name="opleiding">
+                    <option value="geen">Geen</option>
+                    <option value="MBO-4">MBO 4</option>
+                    <option value="HBO-bachelor">HBO Bachelor</option>
+                    <option value="HBO-associate-degree">HBO Associate Degree</option>
+                    <option value="Wo">Wo</option>
+                  </select>
+                <br><br>
+                <label for="cursus">Gewenste cursus:</label>
+                <input type="checkbox" name="cursus" value="Applicatiebeheer">Applicatiebeheer
+                <input type="checkbox" name="cursus" value="Cloud Engineer">Cloud Engineer
+                <input type="checkbox" name="cursus" value="Full Stack Developer">Full Stack Developer
+                <br><br>
+                <label for="startdatum">Startdatum:</label>
+                <input type="date" name="startdatum" min="2025-02-01" max="2030-12-31">
+        </fieldset>
+        <br>
+        <input type="submit" value="Verzend">
+    </form>
+</body>
+</html>
