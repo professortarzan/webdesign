@@ -1,0 +1,34 @@
+/* CSS for praktijkopgave */
+
+div {
+    width: 50%;
+    min-height: 200px;
+    background-color: firebrick;
+    color: white;
+    padding: 20px;
+}
+
+img {
+    float: left;
+    width: 25%;
+    margin-right: 10px;
+    border: 2px dotted white;
+    padding: 5px
+}
+
+.nieuwsartikel1 img:hover {
+    filter: opacity(50%);
+}
+
+.nieuwsartikel2 img {
+    float: right;
+    margin-left: 10px;
+}
+
+.nieuwsartikel2 img:hover {
+    filter: none;
+}
+
+.nieuwsartikel3 img:hover {
+    filter: saturate(8);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubus animatie</title>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            animation-name: beweging;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        #kubus1 {
+            background-color: blue;
+        }
+
+        #kubus2 {
+            background-color: red;
+        }
+
+        @keyframes beweging {
+            0% {
+                margin-left: 0px;
+            }
+
+            25% {
+                margin-left: 100px;
+            }
+
+            75% {
+                margin-left: 200px;
+            }
+
+            100% {
+                margin-left: 300px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="kubus1"></div>
+    <div id="kubus2"></div>
+</body>
+</html>

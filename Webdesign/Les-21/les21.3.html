@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Verplichte metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap-CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+    <title>Mijn Bootstrap-pagina!</title>
+  </head>
+  <body>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne">
+            Maastricht
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Maastricht is een stad en gemeente in het zuiden van Nederland.
+              Het is de hoofdstad van de provincie Limburg en telt 118.636
+              inwoners. Het is hiermee de grootste gemeente van de provincie
+              Limburg. Maastricht is ontstaan bij een doorwaadbare plaats aan de
+              rivier de Maas, waaraan het zijn naam te danken heeft. Bron:
+              Wikipedia
+            </p>
+            <div class="alert alert-info" role="alert">Maastricht telt 118.636 inwoners.</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Antwerpen
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Antwerpen is een stad in het Belgische gewest Vlaanderen. Het is
+              de hoofdstad van de provincie Antwerpen en van het gelijknamige
+              arrondissement. Antwerpen telt circa 529.000 inwoners en is
+              daarmee qua inwonertal de grootste gemeente van België. Bron:
+              Wikipedia
+            </p>
+            <div class="alert alert-info" role="alert">Antwerpen telt circa 529.000 inwoners.</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Luxemburg
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Luxemburg is de hoofdstad en grootste stad van het Groothertogdom
+              Luxemburg. Het ligt in het kanton Luxemburg. De rivieren Alzette
+              en Pétrusse stromen door de stad. De naam Luxemburg is afkomstig
+              van Lucilinburhuc, dat kleine burcht betekent. De stad is een van
+              de rijkste steden van Europa. Bron: Wikipedia
+            </p>
+            <div class="alert alert-info" role="alert">Luxemburg is een van de rijkste steden van Europa.</div>
+            <button type="button" class="btn btn-danger btn-lg">Verwijder</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap-JavaScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

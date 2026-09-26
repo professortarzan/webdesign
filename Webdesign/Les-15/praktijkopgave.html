@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactformulier</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        input[type="text"], input[type="email"], textarea, button {
+            display: block;
+            margin: 15px 0px;
+            padding: 5px 5px;
+            box-sizing: border-box;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 2px -2px 5px lightblue inset;
+        }
+
+        textarea {
+            height: 200px;
+            padding: 15px 15px;
+            background-color: rgba(220, 220, 220, 0.858);
+        }
+
+        button {
+            background-color: bisque;
+            font-weight: bold;
+            width: 80px;
+            margin-top: 20px;
+            padding: 10px 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px green;
+        }
+
+        button:active {
+            background-color: aqua;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Contactformulier</h1>
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" name="inputVoornaam" placeholder="Vul uw voornaam in..." >
+        
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" name="inputAchternaam" placeholder="Vul uw achternaam in...">
+        
+        <label for="adres">Adres:</label>
+        <input type="text" name="inputAdres" placeholder="Vul uw adres in...">
+        
+        <label for="email">E-mail:</label>
+        <input type="email" name="inputEmail" placeholder="Vul uw e-mailadres in...">
+        
+        <label for="bericht">Bericht:</label>
+        <textarea placeholder="Uw bericht aan ons..."></textarea>
+        
+        <h3>Veiligheidsvraag:</h3>
+        <i>Wat is de uitkomst van 5 + 3?</i>
+        <br><br>
+        <input type="radio" name="meerkeuzeAntwoord" value="91">91
+        <input type="radio" name="meerkeuzeAntwoord" value="8">8
+        <input type="radio" name="meerkeuzeAntwoord" value="6">6
+        <input type="radio" name="meerkeuzeAntwoord" value="1">1
+        <br>
+
+        <button type="submit" name="verzendknop">Verzend</button> 
+    </form>
+</body>
+</html>
